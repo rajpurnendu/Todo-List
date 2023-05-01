@@ -16,24 +16,34 @@
        <div class="todo-app">
         <!-- Todo List Heading  -->
         <h2>To-Do List <img src="images/icon.png"/></h2>
-
+        
+        <!-- Todo List Add Input Filed  -->
         <div class="input-filed">
             <input type="text" id="input-box" placeholder="Type your todo list">
             <button onclick="addTask()">Add</button>
         </div>
+
+        <!-- Complete All Task and Clear Completed Task  -->
         <div id="task-select">
             <div id="complete-all-task">Complete all tasks</div>
             <div id="clear-completed">Clear completed</div>
         </div>
         <hr/>
+
+        <!-- Todo List of All Tasks Container  -->
         <ul id="list-container">
             <!-- <li class="checked">Task 1</li>
             <li>Task 2</li>
             <li>Task 3</li> -->
         </ul>
         <hr/>
+
+        <!-- Todo List Count, All List ,Uncomplete List and Completed List  -->
         <div id="footer">
+            <!-- Task Count= checked + Unchecked -->
             <div id="task-count"><span id="task-counter">0</span> tasks left</div>
+            
+            <!-- All , Uncomplete and Completed List with user Click -->
             <div id="task-list">
                 <div id="all" onclick="renderAll()">All</div>
                 <div id="uncomplete" onclick="renderUncomplete()">Uncomplete</div>
