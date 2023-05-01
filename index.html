@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <!-- Link to CSS file  -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Link to the javaScript file  -->
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- todo List container  -->
+       <div class="todo-app">
+        <!-- Todo List Heading  -->
+        <h2>To-Do List <img src="images/icon.png"/></h2>
+
+        <div class="input-filed">
+            <input type="text" id="input-box" placeholder="Type your todo list">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <div id="task-select">
+            <div id="complete-all-task">Complete all tasks</div>
+            <div id="clear-completed">Clear completed</div>
+        </div>
+        <hr/>
+        <ul id="list-container">
+            <!-- <li class="checked">Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li> -->
+        </ul>
+        <hr/>
+        <div id="footer">
+            <div id="task-count"><span id="task-counter">0</span> tasks left</div>
+            <div id="task-list">
+                <div id="all" onclick="renderAll()">All</div>
+                <div id="uncomplete" onclick="renderUncomplete()">Uncomplete</div>
+                <div id="completed" onclick="renderCompleted()">Completed</div>
+            </div>
+        </div>
+       </div>
+    </div>
+</body>
+</html>
