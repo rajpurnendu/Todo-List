@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
+    <!-- font-awesome Icon Cdn Link  -->
+    <script src="https://kit.fontawesome.com/4ed41649c3.js" crossorigin="anonymous"></script>
     <!-- Link to CSS file  -->
     <link rel="stylesheet" href="index.css">
     <!-- Link to the javaScript file  -->
@@ -19,8 +21,9 @@
         
         <!-- Todo List Add Input Filed  -->
         <div class="input-filed">
+            <i class="fa-solid fa-list"></i>
             <input type="text" id="input-box" placeholder="Type your todo list">
-            <button onclick="addTask()">Add</button>
+            <button onclick="addTask()"><i class="fa-solid fa-plus"></i></button>
         </div>
 
         <!-- Complete All Task and Clear Completed Task  -->
@@ -42,7 +45,7 @@
         <div id="footer">
             <!-- Task Count= checked + Unchecked -->
             <div id="task-count"><span id="task-counter">0</span> tasks left</div>
-            
+
             <!-- All , Uncomplete and Completed List with user Click -->
             <div id="task-list">
                 <div id="all" onclick="renderAll()">All</div>
